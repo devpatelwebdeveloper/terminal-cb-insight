@@ -1,0 +1,29 @@
+.input {
+	flex: 1 1 25%;
+	border: 1px solid black;
+}
+.inputField {
+	width: 100%;
+	font-size: 80px;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	background: #1a3763;
+	color: #4caacd;
+}
+
+.error {
+	background: #d6001c;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+	.input {
+		flex: 1 1 50%;
+	}
+}
+@media screen and (max-width: 360px) {
+	.input {
+		flex: 1 1 100%;
+	}
+}

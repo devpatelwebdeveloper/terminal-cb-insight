@@ -1,0 +1,25 @@
+.calculator {
+	display: flex;
+	flex-wrap: wrap;
+}
+.total {
+	flex: 1 1 25%;
+	border: 1px solid black;
+	width: 100%;
+	font-size: 80px;
+	padding: 10px;
+	text-align: center;
+	background: #4caacd;
+	color: #1a3763;
+}
+
+@media screen and (max-width: 720px) {
+	.total {
+		flex: 1 1 50%;
+	}
+}
+@media screen and (max-width: 360px) {
+	.total {
+		flex: 1 1 100%;
+	}
+}
