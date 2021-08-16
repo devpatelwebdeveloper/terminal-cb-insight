@@ -25,8 +25,16 @@ export const abbreviatedNumber = (value) => {
 	return newValue;
 };
 
-export const addition = (num1, num2, num3) => {
-	const add = parseFloat(num1) + parseFloat(num2) + parseFloat(num3);
-	// console.log(add);
-	return abbreviatedNumber(add);
+// export const addition = (num1, num2, num3) => {
+// 	const add = parseFloat(num1) + parseFloat(num2) + parseFloat(num3);
+// 	// console.log(add);
+// 	return abbreviatedNumber(add);
+// };
+
+export const addition = (...numbers) => {
+	return abbreviatedNumber(
+		numbers.reduce((curResult, curValue) => {
+			return parseFloat(curResult) + parseFloat(curValue);
+		}, 0)
+	);
 };
